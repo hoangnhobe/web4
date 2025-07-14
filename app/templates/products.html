@@ -1,0 +1,7 @@
+<h2>Products</h2>
+<ul>
+{% for p in products %}
+    <li>{{ p[1] }} - <a href='/order/{{ p[0] }}'>Buy</a></li>
+{% endfor %}
+</ul>
+<a href='/myorders'>My Orders</a>

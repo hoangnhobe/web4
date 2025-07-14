@@ -1,0 +1,7 @@
+<h2>My Orders</h2>
+<ul>
+{% for o in orders %}
+    <li>{{ o[1] }} - <a href='/cancel/{{ o[0] }}'>Cancel</a></li>
+{% endfor %}
+</ul>
+<a href='/products'>Back to Products</a>
